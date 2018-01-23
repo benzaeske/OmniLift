@@ -1,19 +1,20 @@
 //
-//  WorkoutsTableViewCell.swift
+//  LogWorkoutTableViewCell.swift
 //  OmniLift
 //
-//  Created by Jack Prescott on 1/11/18.
+//  Created by Jack Prescott on 1/22/18.
 //  Copyright © 2018 Something Clever. All rights reserved.
 //
 
 import UIKit
 
-class WorkoutsTableViewCell: UITableViewCell {
+class LogWorkoutTableViewCell: UITableViewCell {
     
-    //MARK: - Properties
-    
-    @IBOutlet weak var workoutNameLabel: UILabel!
-    
+    // MARK: - Properties
+    @IBOutlet weak var exerciseNameLabel: UILabel!
+    @IBOutlet weak var weightTextField: UITextField!
+    @IBOutlet weak var repsTextField: UITextField!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,5 +25,5 @@ class WorkoutsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }
